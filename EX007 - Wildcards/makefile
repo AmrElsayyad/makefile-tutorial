@@ -15,36 +15,40 @@
 thing_wrong := *.o	# Don't do this! '*' will not get expanded
 thing_right := $(wildcard *.o)
 
-all: three four print one two
-	echo all
+all: print three four one two
+	# Note the order of the prerequisites and that make would fail to run rule 'one'
+	touch all
 
 # Print out file information about every .c file
 
 print: $(wildcard *.c)
-	echo print
-	ls -la  $?
-	echo
-	echo 'Note that because there are no .c files, the wildcard here expanded for nothing.' 
-	echo
+	# '$$(wildcard *.c)' in the prerequisites would expand for nothing, since there are no .c files in the directory.
+	# That would lead '$$?' in 'ls -la $$?' to expand for nothing, because '$$?' is an automatic variable that expands for the prerequisites.
+	# You will learn about AUTOMATIC VARIABLES in the next lesson.
+	# That would turn the command 'ls -la $$?' into 'ls -la'. 
+	ls -la $?
+	touch print
 
 # Fails, because $(thing_wrong) is the string "*.o"
 
 one: $(thing_wrong)
-	echo one
+	touch one
 
 # Stays as *.o if there are no files that match this pattern :(
 # Same as one.
 
 two: *.o
-	echo two
+	touch two
 
 # Works as you would expect! In this case, it does nothing.
 
 three: $(thing_right)
-	echo three
+	touch three
 
 # Same as rule three
 
 four: $(wildcard *.o)
-	echo four
+	touch four
 
+clean:
+	rm -f print one two three four all
