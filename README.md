@@ -13,3 +13,7 @@ This repository contains the examples from [the makefile tutorial](https://makef
 <p>Interpreted languages like Python, Ruby, and Javascript don't require an analogue to Makefiles. The goal of Makefiles is to compile whatever files need to be compiled, based on what files have changed. But when files in interpreted languages change, nothing needs to get recompiled. When the program runs, the most recent version of the file is used.</p>
 <h2 id="the-versions-and-types-of-make">The versions and types of Make</h2>
 <p>There are a variety of implementations of Make, but most of this guide will work on whatever version you're using. However, it's specifically written for GNU Make, which is the standard implementation on Linux and MacOS. All the examples work for Make versions 3 and 4, which are nearly equivalent other than some esoteric differences.</p>
+
+<h2 id="Resources">Other Resources</h2>
+
+- <a href="https://www.gnu.org/software/make/manual/html_node/index.html">GNU Make Manual</a>
