@@ -24,7 +24,6 @@ all: print three four one two
 print: $(wildcard *.c)
 	# '$$(wildcard *.c)' in the prerequisites would expand for nothing, since there are no .c files in the directory.
 	# That would lead '$$?' in 'ls -la $$?' to expand for nothing, because '$$?' is an automatic variable that expands for the prerequisites.
-	# You will learn about AUTOMATIC VARIABLES in the next lesson.
 	# That would turn the command 'ls -la $$?' into 'ls -la'. 
 	ls -la $?
 	touch print
