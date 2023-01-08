@@ -1,5 +1,12 @@
 # The Makefile Tutorial
-This repository contains the examples from [the makefile tutorial](https://makefiletutorial.com/).
+Here we will be following the tutorial from https://makefiletutorial.com/ made by <a href="https://github.com/theicfire">Chase Lambert</a>. The examples here are in a logical order. Each one is in a separate folder containing only one makefile.
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+- <a href="https://www.javatpoint.com/compilation-process-in-c">Compilation Process in C</a>
+- <a href="https://www.javatpoint.com/bash">BASH Scripting</a>
+- `gcc` and `make` installed
+- <a href="https://git-scm.com/downloads">Git Bash</a> installed, if using windows.
 
 <h2 id="why-do-makefiles-exist">Why do Makefiles exist?</h2>
 <p>Makefiles are used to help decide which parts of a large program need to be recompiled. In the vast majority of cases, C or C++ files are compiled. Other languages typically have their own tools that serve a similar purpose as Make. Make can also be used beyond compilation too, when you need a series of instructions to run depending on what files have changed. This tutorial will focus on the C/C++ compilation use case.</p>
