@@ -1,5 +1,5 @@
 # The Makefile Tutorial
-Here we will be following the tutorial from https://makefiletutorial.com/ made by <a href="https://github.com/theicfire">Chase Lambert</a>. The examples here are in a logical order. Each one is in a separate folder containing only one makefile.
+Here we will be following the tutorial from https://makefiletutorial.com/ made by <a href="https://github.com/theicfire">Chase Lambert</a>. The examples here are in a logical order. Each one is in a separate folder containing one makefile.
 
 <h2 id="prerequisites">Prerequisites</h2>
 
