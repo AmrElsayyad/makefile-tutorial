@@ -4,7 +4,7 @@ Here we will be following the tutorial from https://makefiletutorial.com/ made b
 <h2 id="prerequisites">Prerequisites</h2>
 
 - Basic knowledge of <a href="https://www.javatpoint.com/compilation-process-in-c">the compilation process in C</a>
-- Basic knowledge of <a href="https://www.javatpoint.com/bash">BASH Scripting</a>
+- Basic knowledge of <a href="https://www.javatpoint.com/bash">Bash Scripting</a>
 - `gcc` and `make` installed
 - <a href="https://git-scm.com/downloads">Git Bash</a> installed, if using windows.
 
