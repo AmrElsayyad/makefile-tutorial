@@ -2,7 +2,7 @@ files := file1 file2
 a := \nOne Two\n	# a is assigned to the string "one two"
 b := '\nOne Two\n'	# Not recommended. b is assigned to the string "'one two'"
 
-all: print some_file rule1 rule2 rule3 rule4 rule5 rule6
+all: print some_file rule1 rule2 rule3 rule4 rule5 rule6 rule7 other
 
 print:
 	printf ${a}
@@ -76,6 +76,17 @@ foo += more
 
 rule6: 
 	echo ${foo}
+
+# Target-specific variables
+# Variables can be assigned for specific targets
+
+rule7: cool = cool
+
+rule7:
+	echo cool is defined: ${cool}
+
+other:
+	echo cool is nothing: ${cool}
 
 clean:
 	rm -f file1 file2 some_file
