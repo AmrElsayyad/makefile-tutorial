@@ -5,7 +5,7 @@ hello:
   echo "Hello, World"
 ```
 
-Note: Makefiles must be indented using TABs and not spaces or `make` will fail.
+> Note: Makefiles must be indented using TABs and not spaces or `make` will fail.
 
 Here is the output of running the above example:
 
