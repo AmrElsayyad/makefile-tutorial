@@ -1,7 +1,10 @@
 # First Functions
 # Functions are mainly just for text processing. Call functions with $(fn, arguments) or ${fn, arguments}. You can make your own using the call builtin function. Make has a decent amount of builtin functions.
 
-all: rule1 rule2 rule3 rule4 rule5 rule6 rule7 rule8
+CC := gcc
+
+all: rule1 rule2 rule3 rule4 rule5 rule6 rule7 rule8 main
+	echo all
 
 var1 := $(subst not, totally, "I am not superman")
 
@@ -100,4 +103,23 @@ rule7:
 
 rule8: 
 	echo $(shell ls -la) # Very ugly because the newlines are gone!
+obj_files = foo.result bar.o lose.o main.o
+src_files = foo.raw bar.c lose.c
+
+main: $(obj_files)
+	echo main
+
+# Ex 1: .o files depend on .c files. Though we don't actually make the .o file.
+$(filter %.o,$(obj_files)): %.o: %.c
+	echo "target: $@ prereq: $<"
+
+# Ex 2: .result files depend on .raw files. Though we don't actually make the .result file.
+$(filter %.result,$(obj_files)): %.result: %.raw
+	echo "target: $@ prereq: $<" 
+
+%.c %.raw:
+	touch $@
+
+clean:
+	rm -f *.c *.o
 
