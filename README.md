@@ -21,6 +21,36 @@ Here we will be following the tutorial from https://makefiletutorial.com/ made b
 <h2 id="the-versions-and-types-of-make">The versions and types of Make</h2>
 <p>There are a variety of implementations of Make, but most of this guide will work on whatever version you're using. However, it's specifically written for GNU Make, which is the standard implementation on Linux and MacOS. All the examples work for Make versions 3 and 4, which are nearly equivalent other than some esoteric differences.</p>
 
-<h2 id="Resources">Other Resources</h2>
+<h2 id="contents">Table of Contents</h2>
+
+- <a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX001%20-%20Hello%20World" id="EX001">EX001 - Hello World</a>
+- <a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX002%20-%20Makefile%20Syntax" id="EX002">EX002 - Makefile Syntax</a>
+- <a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX003%20-%20Makefile%20Sequence%20of%20Events" id="EX003">EX003 - Makefile Sequence of Events</a>
+- <a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX004%20-%20Make%20Clean" id="EX004">EX004 - Make clean</a>
+- <a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX005%20-%20Variables" id="EX005">EX005 - Variables</a>
+- <a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX006%20-%20Automatic%20Variables" id="EX006">EX006 - Automatic Variables</a>
+- <a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX007%20-%20Targets" id="EX007">EX007 - Targets</a>
+- <a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX008%20-%20The%20Asterisk%20Wildcard" id="EX008">EX008 - The Asterisk Wildcard</a>
+- <a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX009%20-%20The%20Percent%20Sign%20Wildcard" id="EX009">EX009 - The Percent Sign Wildcard</a>
+- <a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX010%20-%20Implicit%20Rules" id="EX010">EX010 - Implicit Rules</a>
+- <a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX011%20-%20Static%20Pattern%20Rules" id="EX011">EX011 - Static Pattern Rules</a>
+- <a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX012%20-%20Pattern%20Rules" id="EX012">EX012 - Pattern Rules</a>
+- <a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX013%20-%20Double-Colon%20Rules" id="EX013">EX013 - Double-Colon Rules</a>
+- <a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX014%20-%20Command%20Silencing" id="EX014">EX014 - Command Silencing</a>
+- <a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX015%20-%20Command%20Execution" id="EX015">EX015 - Command Execution</a>
+- <a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX016%20-%20Default%20Shell" id="EX016">EX016 - Default Shell</a>
+- <a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX017%20-%20Double%20Dollar%20Sign" id="EX017">EX017 - Double Dollar Sign</a>
+- <a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX018%20-%20Error%20Handling" id="EX018">EX018 - Error Handling</a>
+- <a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX019%20-%20Recursion" id="EX019">EX019 - Recursion</a>
+- <a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX020%20-%20Environment%20Variables" id="EX020">EX020 - Environment Variables</a>
+- <a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX021%20-%20Override%20CLI%20Arguments" id="EX021">EX021 - Override CLI Arguments</a>
+- <a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX022%20-%20Functions" id="EX022">EX022 - Functions</a>
+- <a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX023%20-%20Conditional%20Statement" id="EX023">EX023 - Conditional Statements</a>
+- <a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX024%20-%20vpath" id="EX024">EX024 - vpath</a>
+- <a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX025%20-%20.PHONY" id="EX025">EX025 - .PHONY</a>
+- <a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX026%20-%20.DELETE_ON_ERROR" id="EX026">EX026 - .DELETE_ON_ERROR</a>
+- <a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/Makefile%20Cookbook" id="cookbook">Makefile Cookbook</a>
+
+<h2 id="resources">Other Resources</h2>
 
 - <a href="https://www.gnu.org/software/make/manual/html_node/index.html">GNU Make Manual</a>
