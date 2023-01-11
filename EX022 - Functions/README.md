@@ -34,8 +34,8 @@ function_syntax:
 ```
 
 ### Pattern Substitution
-$(patsubst pattern,replacement,text) does the following:
-> "Finds whitespace-separated words in text that match pattern and replaces them with replacement. Here pattern may contain a ‘%’ which acts as a wildcard, matching any number of any characters within a word. If replacement also contains a ‘%’, the ‘%’ is replaced by the text that matched the ‘%’ in pattern. Only the first ‘%’ in the pattern and replacement is treated this way; any subsequent ‘%’ is unchanged." (GNU docs)
+`$(patsubst pattern,replacement,text)` does the following:
+> "Finds whitespace-separated words in text that match pattern and replaces them with replacement. Here pattern may contain a `%` which acts as a wildcard, matching any number of any characters within a word. If replacement also contains a `%`, the `%` is replaced by the text that matched the `%` in pattern. Only the first `%` in the pattern and replacement is treated this way; any subsequent `%` is unchanged." -- GNU docs
 
 The substitution reference `$(text:pattern=replacement)` is a shorthand for this.
 
