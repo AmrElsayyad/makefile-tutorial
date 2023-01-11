@@ -1,7 +1,3 @@
-# Add -k when running make to continue running even in the face of errors. Helpful if you want to see all the errors of Make at once.
-# Add a - before a command to suppress the error
-# Add -i to make to have this happen for every command.
-
 all: one two
 	echo all
 

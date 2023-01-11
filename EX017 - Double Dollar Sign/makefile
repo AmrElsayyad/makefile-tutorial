@@ -1,7 +1,5 @@
-# Double dollar sign
-# If you want a string to have a dollar sign, you can use $$. This is how to use a shell variable in bash or sh.
-#
-# Note the differences between Makefile variables and Shell variables in this next example.
+# If you want a string to have a dollar sign, you can use $$.
+# This is how to use a shell variable in bash or sh.
 
 make_var = I am a make variable
 

@@ -1,4 +1,3 @@
-# Command Execution
 # Each command is run in a new shell (or at least the effect is as such)
 
 all: 
