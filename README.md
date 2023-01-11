@@ -26,7 +26,7 @@ Here we will be following the tutorial from https://makefiletutorial.com/ made b
 - <a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX001%20-%20Hello%20World" id="EX001">EX001 - Hello World</a>
 - <a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX002%20-%20Makefile%20Syntax" id="EX002">EX002 - Makefile Syntax</a>
 - <a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX003%20-%20Makefile%20Sequence%20of%20Events" id="EX003">EX003 - Makefile Sequence of Events</a>
-- <a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX004%20-%20Make%20Clean" id="EX004">EX004 - Make clean</a>
+- <a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX004%20-%20Make%20clean" id="EX004">EX004 - Make clean</a>
 - <a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX005%20-%20Variables" id="EX005">EX005 - Variables</a>
 - <a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX006%20-%20Automatic%20Variables" id="EX006">EX006 - Automatic Variables</a>
 - <a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX007%20-%20Targets" id="EX007">EX007 - Targets</a>
@@ -45,7 +45,7 @@ Here we will be following the tutorial from https://makefiletutorial.com/ made b
 - <a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX020%20-%20Environment%20Variables" id="EX020">EX020 - Environment Variables</a>
 - <a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX021%20-%20Override%20CLI%20Arguments" id="EX021">EX021 - Override CLI Arguments</a>
 - <a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX022%20-%20Functions" id="EX022">EX022 - Functions</a>
-- <a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX023%20-%20Conditional%20Statement" id="EX023">EX023 - Conditional Statements</a>
+- <a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX023%20-%20Conditional%20Statements" id="EX023">EX023 - Conditional Statements</a>
 - <a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX024%20-%20vpath" id="EX024">EX024 - vpath</a>
 - <a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX025%20-%20.PHONY" id="EX025">EX025 - .PHONY</a>
 - <a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX026%20-%20.DELETE_ON_ERROR" id="EX026">EX026 - .DELETE_ON_ERROR</a>
