@@ -1,18 +1,25 @@
+# Run this with `make -s` if you don't want to print the commands.
+
+all: some_file quotes whitespaces empty recursive_vs_simple\
+	 concat append set_if_unset reference
+	echo 'all is done!'
+
+
+# some_file
+
 files := file1 file2
-a := \nOne Two\n	# a is assigned to the string "one two"
-b := '\nOne Two\n'	# Not recommended. b is assigned to the string "'one two'"
-
-all: print some_file rule1 rule2 rule3 rule4 rule5 rule6 rule7 other
-
-print:
-	printf ${a}
-	printf '${a}'
-	printf ${b}
-	printf '${b}'
 
 some_file: ${files}
+	echo
+	echo '>>> some_file >>>'
+	echo
+
 	echo "Look at this variable: " ${files}
 	touch some_file
+
+	echo
+	echo '<<< some_file <<<'
+	echo
 
 file1:
 	touch file1
@@ -20,38 +27,28 @@ file1:
 file2:
 	touch file2
 
-# Recursive variable. This will print "later" below
-one = one ${later_variable}
 
-# Simply expanded variable. This will not print "later" below
-two := two ${later_variable}
+# Quotes
 
-later_variable = later
+quoted := '\nOne Two\n'	# Not recommended. 'quotes' is assigned to the string "'\nOne Two\n'	"
+not_quoted := \nOne Two\n	# 'no_quotes' is assigned to the string "\nOne Two\n	"
 
-rule1: 
-	echo ${one}
-	echo ${two}
+quotes:
+	echo
+	echo '>>> quotes >>>'
+	echo
 
-# Simply expanded {using :=} allows you to append to a variable. Recursive definitions will give an infinite loop error.
+	printf ${quoted}
+	printf '${quoted}'
+	printf ${not_quoted}
+	printf '${not_quoted}'
 
-three = hello
-# one gets defined as a simply expanded variable {:=} and thus can handle appending
-three := ${three} there
+	echo
+	echo '<<< quotes <<<'
+	echo
 
-rule2: 
-	echo ${three}
 
-# ?= only sets variables if they have not yet been set
-
-four = hello
-four ?= will not be set
-five ?= will be set
-
-rule3: 
-	echo ${four}
-	echo ${five}
-
-# Spaces at the end of a line are not stripped, but those at the start are. To make a variable with a single space, use ${nullstring}
+# Whitespaces
 
 with_spaces = hello   # with_spaces has many spaces after "hello"
 after = ${with_spaces}there
@@ -59,35 +56,135 @@ after = ${with_spaces}there
 nullstring =
 space = ${nullstring} # Make a variable with a single space.
 
-rule4: 
+whitespaces:
+	echo
+	echo '>>> whitespaces >>>'
+	echo
+
 	echo "${after}"
 	echo start"${space}"end
 
+	echo
+	echo '<<< whitespaces <<<'
+	echo
+
+
 # An undefined variable is actually an empty string!
 
-rule5: 
+empty:
+	echo
+	echo '>>> empty >>>'
+	echo
+
 	# Undefined variables are just empty strings!
 	echo ${nowhere}
 
-# Use += to append
+	echo
+	echo '<<< empty <<<'
+	echo
 
-foo := start
-foo += more
 
-rule6: 
-	echo ${foo}
+# Recursive and simply-expanded variables
 
-# Target-specific variables
-# Variables can be assigned for specific targets
+# Recursive variable. This will print "later" below
+recursive = blah ${later_variable}
 
-rule7: cool = cool
+# Simply-expanded variable. This will not print "later" below
+simple := blah ${later_variable}
 
-rule7:
-	echo cool is defined: ${cool}
+later_variable = later
 
-other:
-	echo cool is nothing: ${cool}
+recursive_vs_simple:
+	echo
+	echo '>>> recursive_vs_simple >>>'
+	echo
+
+	echo ${recursive}
+	echo ${simple}
+
+	echo
+	echo '<<< recursive_vs_simple <<<'
+	echo
+
+
+# Simply-expanded variables (using `:=`) allows you to append to itself. 
+# Recursive definitions will give an infinite loop error.
+
+var = hello
+# var gets defined as a simply-expanded variable (`:=`)
+# Thus can handle appending
+var := ${var} there
+
+concat:
+	echo
+	echo '>>> concat >>>'
+	echo
+
+	echo ${var}
+
+	echo
+	echo '<<< concat <<<'
+	echo
+
+
+# Use `+=` to append
+
+str := start
+str += more
+
+append:
+	echo
+	echo '>>> append >>>'
+	echo
+
+	echo ${str}
+
+	echo
+	echo '<<< append <<<'
+	echo
+
+
+# `?=` only sets variables if they have not yet been set
+
+set = hello
+set ?= will not be set
+unset ?= will be set
+
+set_if_unset:
+	echo
+	echo '>>> set_if_unset >>>'
+	echo
+
+	echo ${set}
+	echo ${unset}
+
+	echo
+	echo '<<< set_if_unset <<<'
+	echo
+
+
+# Reference variables using either `${}` or `$()`
+
+x := dude
+
+reference:
+	echo
+	echo '>>> reference >>>'
+	echo
+	
+	echo $(x)
+	echo ${x}
+
+	# Bad practice, but works
+	echo $x
+  
+	# Good practice, also used in bash
+	echo ${x}
+
+	echo
+	echo '<<< reference <<<'
+	echo
+
 
 clean:
 	rm -f file1 file2 some_file
-
