@@ -60,7 +60,7 @@ four:
 	echo $$global
 ```
 
-> Note that you can use .EXPORT_ALL_VARIABLES exports all variables for you.
+> Note that you can use `.EXPORT_ALL_VARIABLES` exports all variables for you.
 
 <p align="right">
 	<a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX021%20-%20Override%20CLI%20Arguments" id="EX021">
