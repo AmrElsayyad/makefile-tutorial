@@ -28,6 +28,6 @@ clean:
 
 <p align="right">
 	<a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX007%20-%20Targets" id="EX007">
-		EX007 - Targets
+		Next: EX007 - Targets
 	</a>
 </p>
