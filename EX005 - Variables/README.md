@@ -19,8 +19,8 @@ file2:
 Single or double quotes have no meaning to Make. They are simply characters that are assigned to the variable. Quotes are useful to shell/bash, though, and you need them in commands like `printf`.
 
 ```make
-quoted := '\nOne Two\n'	# Not recommended. 'quotes' is assigned to the string "'\nOne Two\n'	"
-not_quoted := \nOne Two\n	# 'no_quotes' is assigned to the string "\nOne Two\n	"
+quoted	:= '\nOne Two\n'	# Not recommended. 'quoted' is assigned to the string "'\nOne Two\n'	"
+not_quoted := \nOne Two\n	# 'not_quoted' is assigned to the string "\nOne Two\n	"
 
 quotes:
 	printf ${quoted}
