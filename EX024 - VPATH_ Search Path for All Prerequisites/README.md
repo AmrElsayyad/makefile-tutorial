@@ -1,10 +1,10 @@
 ### VPATH: Search Path for All Prerequisites
 
-The value of the make variable `VPATH` specifies a list of directories that make should search. Most often, the directories are expected to contain prerequisite files that are not in the current directory; however, make uses `VPATH` as a search list for both prerequisites and targets of rules.
+The value of the `make` variable `VPATH` specifies a list of directories that `make` should search. Most often, the directories are expected to contain prerequisite files that are not in the current directory; however, `make` uses `VPATH` as a search list for both prerequisites and targets of rules.
 
-Thus, if a file that is listed as a target or prerequisite does not exist in the current directory, make searches the directories listed in `VPATH` for a file with that name. If a file is found in one of them, that file may become the prerequisite (see below). Rules may then specify the names of files in the prerequisite list as if they all existed in the current directory.
+Thus, if a file that is listed as a target or prerequisite does not exist in the current directory, `make` searches the directories listed in `VPATH` for a file with that name. If a file is found in one of them, that file may become the prerequisite (see below). Rules may then specify the names of files in the prerequisite list as if they all existed in the current directory.
 
-In the `VPATH` variable, directory names are separated by colons or blanks. The order in which directories are listed is the order followed by make in its search. (On MS-DOS and MS-Windows, semi-colons are used as separators of directory names in `VPATH`, since the colon can be used in the pathname itself, after the drive letter.)
+In the `VPATH` variable, directory names are separated by colons or blanks. The order in which directories are listed is the order followed by `make` in its search. (On MS-DOS and MS-Windows, semi-colons are used as separators of directory names in `VPATH`, since the colon can be used in the pathname itself, after the drive letter.)
 
 For example,
 
@@ -12,7 +12,7 @@ For example,
 VPATH = src:headers
 ```
 
-specifies a path containing two directories, `src` and `headers`, which Make searches in that order.
+specifies a path containing two directories, `src` and `headers`, which `make` searches in that order.
 
 With this value of `VPATH`, the following rule,
 
@@ -59,9 +59,9 @@ For example,
 vpath %.h ../headers
 ```
 
-tells make to look for any prerequisite whose name ends in .h in the directory `../headers` if the file is not found in the current directory.
+tells `make` to look for any prerequisite whose name ends in .h in the directory `../headers` if the file is not found in the current directory.
 
-If several `vpath` patterns match the prerequisite file’s name, then Make processes each matching `vpath` directive one by one, searching all the directories mentioned in each directive. Make handles multiple `vpath` directives in the order in which they appear in the makefile; multiple directives with the same pattern are independent of each other.
+If several `vpath` patterns match the prerequisite file’s name, then `make` processes each matching `vpath` directive one by one, searching all the directories mentioned in each directive. `make` handles multiple `vpath` directives in the order in which they appear in the makefile; multiple directives with the same pattern are independent of each other.
 
 Thus,
 
@@ -112,7 +112,7 @@ clean:
 ```
 
 <p align="right">
-	<a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX025%20-%20.PHONY" id="EX025">
-		Next: EX025 - .PHONY
+	<a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX025%20-%20Phony%20Targets" id="EX025">
+		Next: EX025 - Phony Targets
 	</a>
 </p>
