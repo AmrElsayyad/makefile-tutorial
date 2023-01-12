@@ -5,7 +5,7 @@ Pattern rules are often used but quite confusing. You can look at them as two wa
 Let's start with an example first:
 
 ```make
-CC = gcc
+CC := gcc
 
 objects = foo.o bar.o all.o
 all: $(objects)

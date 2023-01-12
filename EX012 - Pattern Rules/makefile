@@ -1,4 +1,4 @@
-CC = gcc
+CC := gcc
 
 objects = foo.o bar.o all.o
 all: $(objects)
