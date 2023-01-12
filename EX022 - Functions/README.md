@@ -1,4 +1,4 @@
-Functions are mainly just for text processing. Call functions with `$(fn, arguments)` or `${fn, arguments}`. You can make your own using the call builtin function. Make has a decent amount of [builtin functions](https://www.gnu.org/software/make/manual/html_node/Functions.html).
+Functions are mainly just for text processing. Call functions with `$(fn, arguments)` or `${fn, arguments}`. You can make your own using the call builtin function. `make` has a decent amount of [builtin functions](https://www.gnu.org/software/make/manual/html_node/Functions.html).
 
 ### The substitute function
 
@@ -136,6 +136,11 @@ $(filter %.result,$(obj_files)): %.result: %.raw
 clean:
 	rm -f *.c *.o *.raw
 ```
+
+### More Functions
+
+- [Functions for Transforming Text](https://www.gnu.org/software/make/manual/html_node/Functions.html#Functions)
+
 
 <p align="right">
 	<a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX023%20-%20Conditional%20Statements" id="EX023">
