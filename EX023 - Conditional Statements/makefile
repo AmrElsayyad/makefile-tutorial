@@ -1,49 +1,58 @@
-# Conditional Statements
+# Run with 'make -s' to see MAKEFLAGS working
 
-all: rule1 rule2 rule3 rule4
+all: ifeq_empty ifdef_expanded ifdef_not_expanded ifdef_empty flags
 
-var1 = ok
+# ifeq
 
-rule1:
-ifeq (${var1}, ok)
-	echo "var1 equals ok"
+tabs =		# contains tabulations
+
+ifeq_empty:
+ifeq ($(strip ${tabs}),)
+	echo "'tabs' is empty or contains only whitespace"
 else
-	echo "nope"
+	echo "This will not run"
 endif
 
-# Check if a variable is empty
-nullstring =
-var2 = $(nullstring) # end of line; there is a space here
 
-rule2:
-ifeq ($(strip ${var2}),)
-	echo "var2 is empty after being stripped"
-endif
-ifeq (${nullstring},)
-	echo "nullstring doesn't even have spaces"
-endif
+# ifdef with expansion
 
-# Check if a variable is defined
-# ifdef does not expand variable references; it just sees if something is defined at all
+var1 = true
+var2 = var1
 
-bar =
-foo = ${bar}
-
-rule3:
-ifdef foo
-	echo "foo is defined"
-endif
-ifndef bar
-	echo "but bar is not"
+ifdef_expanded:
+ifdef ${var2}
+	echo "'var2' is expanded to 'var1' and 'var1' is defined"
 endif
 
-# ${makeflags}
-# This example shows you how to test make flags with findstring and MAKEFLAGS.
-# Run this example with make -i to see it print out the echo statement.
 
-rule4:
-# Search for the "-i" flag. MAKEFLAGS is just a list of single characters, one per flag. So look for "i" in this case.
-ifneq (,$(findstring i, ${MAKEFLAGS}))
-	echo "i was passed to MAKEFLAGS"
+# ifdef with no expansion
+
+var3 =
+var4 = $(var3)
+
+ifdef_not_expanded:
+ifdef var4
+	echo "'var4' is defined even though it is expanded value is not"
+else
+	echo "This will not run"
 endif
 
+
+# ifdef with empty value
+
+var5 =
+
+ifdef_empty:
+ifdef var5
+	echo "This will not run"
+else
+	echo "'var5' is not defined"
+endif
+
+
+# MAKEFLAGS
+
+flags:
+ifneq (,$(findstring s,$(word 1,-${MAKEFLAGS})))
+	echo "s was passed to MAKEFLAGS"
+endif
