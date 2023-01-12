@@ -18,7 +18,7 @@ all.c:
 	echo 'int main() { return 0; }' > $@
 ```
 
-Pattern rules contain a '%' in the target. This '%' matches any nonempty string, and the other characters match themselves. ‘%’ in a prerequisite of a pattern rule stands for the same stem that was matched by the ‘%’ in the target.
+Pattern rules contain a `%` in the target. This `%` matches any nonempty string, and the other characters match themselves. `%` in a prerequisite of a pattern rule stands for the same stem that was matched by the `%` in the target.
 
 Here's another example:
 
