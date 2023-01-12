@@ -1,4 +1,4 @@
-A Makefile consists of a set of rules. A rule generally looks like this:
+A _makefile_ consists of a set of _rules/recipes_. A _rule/recipe_ generally looks like this:
 
 ```make
 targets: prerequisites

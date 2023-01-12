@@ -1,8 +1,8 @@
-This Makefile ultimately runs all three targets. When you run `make` in the terminal, it will build a program called `blah.exe` in a series of steps:
+This _makefile_ ultimately runs all three targets. When you run `make` in the terminal, it will build a program called `blah.exe` in a series of steps:
 
-- Make selects the target `blah.exe`, because the first target is the default target
-- blah requires `blah.o`, so make searches for the `blah.o` target
-- `blah.o` requires `blah.c`, so make searches for the `blah.c` target
+- `make` selects the target `blah.exe`, because the first target is the default target
+- blah requires `blah.o`, so `make` searches for the `blah.o` target
+- `blah.o` requires `blah.c`, so `make` searches for the `blah.c` target
 - `blah.c` has no dependencies, so the echo command is run
 - The rule for target `blah.o` is then run, because all of the `blah.o` dependencies are finished
 - Finally, the rule for target `blah.exe` is run, because all the `blah.exe` dependencies are finished
