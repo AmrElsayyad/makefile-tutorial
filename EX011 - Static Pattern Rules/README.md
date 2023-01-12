@@ -8,7 +8,7 @@ targets...: target-pattern: prereq-patterns ...
 The essence is that the given target is matched by the target-pattern (via a `%` wildcard). Whatever was matched is called the stem. The stem is then substituted into the prereq-pattern, to generate the target's prereqs.
 
 ```make
-CC = gcc
+CC := gcc
 
 objects = foo.o bar.o all.o
 
