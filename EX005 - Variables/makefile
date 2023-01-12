@@ -1,7 +1,6 @@
 # Run this with `make -s` if you don't want to print the commands.
 
-all: some_file quotes whitespaces empty recursive_vs_simple\
-	 concat append set_if_unset reference
+all: some_file quotes whitespaces empty recursive_vs_simple concat append set_if_unset
 	echo 'all is done!'
 
 
@@ -160,29 +159,6 @@ set_if_unset:
 
 	echo
 	echo '<<< set_if_unset <<<'
-	echo
-
-
-# Reference variables using either `${}` or `$()`
-
-x := dude
-
-reference:
-	echo
-	echo '>>> reference >>>'
-	echo
-	
-	echo $(x)
-	echo ${x}
-
-	# Bad practice, but works
-	echo $x
-  
-	# Good practice, also used in bash
-	echo ${x}
-
-	echo
-	echo '<<< reference <<<'
 	echo
 
 

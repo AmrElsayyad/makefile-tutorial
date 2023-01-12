@@ -1,4 +1,6 @@
-Variables in Make can only be **strings**. 
+### Basics of Variable References
+
+Variables in `make` can only be **strings**. Reference variables using either `${}` or `$()`.
 
 Here's an example of using variables:
 
@@ -16,6 +18,9 @@ file2:
 	touch file2
 ```
 
+
+### Quotes
+
 Single or double quotes have no meaning to Make. They are simply characters that are assigned to the variable. Quotes are useful to shell/bash, though, and you need them in commands like `printf`.
 
 ```make
@@ -28,6 +33,8 @@ quotes:
 	printf ${not_quoted}
 	printf '${not_quoted}'
 ```
+
+### Trailing whitespace
 
 Spaces at the end of a line are not stripped, but those at the start are. To make a variable with a single space, use `${nullstring}`.
 
@@ -50,6 +57,8 @@ empty:
 	# Undefined variables are just empty strings!
 	echo ${nowhere}
 ```
+
+### Variable Assignment
 
 You can define variables using two methods:
 
@@ -84,7 +93,7 @@ concat:
 	echo ${var}
 ```
 
-Use `+=` to append
+You can use `+=` to append to variables:
 
 ```make
 str := start
@@ -94,7 +103,9 @@ append:
 	echo ${str}
 ```
 
-`?=` only sets variables if they have not yet been set.
+### Conditional Variable Assignment
+
+There is another assignment operator for variables, `?=`. This is called a conditional variable assignment operator, because it only has an effect if the variable is not yet defined.
 
 ```make
 set = hello
@@ -106,23 +117,8 @@ set_if_unset:
 	echo ${unset}
 ```
 
-Reference variables using either `${}` or `$()`.
+> Note: If you want `make` to run silently, use the `-s` option.
 
-```make
-x := dude
-
-reference:
-	echo $(x)
-	echo ${x}
-
-	# Bad practice, but works
-	echo $x
-  
-	# Good practice, also used in bash
-	echo ${x}
-```
-
-> Note: If you want `make` to stop printing the commands, use the `-s` option, i.e., use `make -s`.
 
 <p align="right">
   <a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX006%20-%20Automatic%20Variables">
