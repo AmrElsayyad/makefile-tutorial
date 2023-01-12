@@ -23,7 +23,7 @@ two:
 	echo $$var2
 ```
 
-As such, when you run the make command inside of make, you can use the `export` directive to make it accessible to sub-make commands. In this example, `var4` is exported such that the makefile in subdir can use it.
+As such, when you run the make command inside of make, you can use the `export` directive to make it accessible to sub-make commands. In this example, `var4` is exported such that the makefile in `subdir` can use it.
 
 ```make
 var3 = "hello:\n\techo \$${var4}\n"
