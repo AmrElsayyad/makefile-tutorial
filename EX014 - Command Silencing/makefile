@@ -1,6 +1,6 @@
 # Add an @ before a command to stop it from being printed
-# You can also run make with -s to add an @ before each line
+# Run with 'make -s' to run silently
 
 all: 
-	@echo "This make line will not be printed"
+	@echo "This 'make' line will not be printed"
 	echo "But this will"
