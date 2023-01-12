@@ -1,6 +1,4 @@
-# Command line arguments and override
-# You can override variables that come from the command line by using override.
-# Run make with 'make option_one=hi option_two=bye'
+# Run with 'make option_one=hi option_two=bye'
 
 # Overrides command line arguments
 override option_one = did_override
