@@ -1,4 +1,4 @@
-### `*` Wildcard
+### * Wildcard
 `*` searches your filesystem for matching filenames. `*` may be used in the target, prerequisites, or in the wildcard function. In the example below, `$(wildcard *.c)` in the prerequisites would expand for nothing, since there are no .c files in the directory. That would lead `$?` in `ls -la $?` to expand for nothing, because `$?` is an automatic variable that expands for the prerequisites. That would turn the command `ls -la $?` into `ls -la`.
 
 ```make
