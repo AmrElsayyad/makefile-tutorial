@@ -111,7 +111,7 @@ shell_fun:
 ```
 
 ### The filter function
-Returns all whitespace-separated words in text that do match any of the pattern words, removing any words that do not match. The patterns are written using ‘%’, just like the patterns used in the patsubst function above.
+Returns all whitespace-separated words in text that do match any of the pattern words, removing any words that do not match. The patterns are written using `%`, just like the patterns used in the patsubst function above.
 
 The `filter` function can be used to separate out different types of strings (such as file names) in a variable. For example:
 
