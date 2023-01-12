@@ -1,6 +1,6 @@
 # Makefile Tutorial
 
-This tutorial provides a step-by-step guide that covers the basics of _makefiles_. The tutorial was built on https://makefiletutorial.com created by [Chase Lambert](https://github.com/theicfire). I added more information from the [GNU Make Manual](https://www.gnu.org/software/make/manual/html_node/index.html) to add some clarifications. The examples are available in separate folders. Each folder has its own _makefile_ containing code that is discussed in a _README_ file. The tutorial examples are progressive so that each step is built on the previous step. At the end you'll be seeing how various topics all work together in an example project (see [Makefile Cookbook](https://github.com/AmrElsayyad/makefile-tutorial/tree/main/Makefile%20Cookbook)).
+This tutorial provides a step-by-step guide that covers the basics of _makefiles_. I built the tutorial on top of the [Makefile Tutorial By Example](https://makefiletutorial.com/) created by [Chase Lambert](https://github.com/theicfire), with more information from the [GNU Make Manual](https://www.gnu.org/software/make/manual/html_node/index.html) to add some clarifications. The examples are available in separate folders. Each folder has a _makefile_ containing code discussed in a README file. The tutorial examples are progressive. Each step builds on the previous step. In the end, you'll see how various topics work together in an example project (see [Makefile Cookbook](https://github.com/AmrElsayyad/makefile-tutorial/tree/main/Makefile%20Cookbook)).
 
 ## Prerequisites
 
@@ -11,9 +11,9 @@ This tutorial provides a step-by-step guide that covers the basics of _makefiles
 
 ## Why do makefiles exist?
 
-Makefiles are used to help decide which parts of a large program need to be recompiled. In the vast majority of cases, C or C++ files are compiled. Other languages typically have their own tools that serve a similar purpose as `make`. `make` can also be used beyond compilation too, when you need a series of instructions to run depending on what files have changed. This tutorial will focus on the C/C++ compilation use case.
+Makefiles are used to help decide which parts of a large program need to be recompiled. In the vast majority of cases, C or C++ files are compiled. Other languages typically have their own tools that serve a similar purpose as Make. Make can also be used beyond compilation too, when you need a series of instructions to run depending on what files have changed. This tutorial will focus on the C/C++ compilation use case.
 
-Here's an example dependency graph that you might build with `make`. If any file's dependencies changes, then the file will get recompiled:
+Here's an example dependency graph that you might build with Make. If any file's dependencies changes, then the file will get recompiled:
 
 <div class="center">
 <img src="https://makefiletutorial.com/assets/dependency_graph.png">
@@ -27,7 +27,7 @@ Interpreted languages like Python, Ruby, and Javascript don't require an analogu
 
 ## The versions and types of Make
 
-There are a variety of implementations of _Make_, but most of this guide will work on whatever version you're using. However, it's specifically written for _GNU Make_, which is the standard implementation on _Linux_ and _MacOS_. All the examples work for _Make_ versions 3 and 4, which are nearly equivalent other than some esoteric differences.
+There are a variety of implementations of Make, but most of this guide will work on whatever version you're using. However, it's specifically written for GNU Make, which is the standard implementation on Linux and MacOS. All the examples work for Make versions 3 and 4, which are nearly equivalent other than some esoteric differences.
 
 ## Table of Contents
 
@@ -60,5 +60,5 @@ There are a variety of implementations of _Make_, but most of this guide will wo
 
 ## Resources
 
-- [Makefile Tutorial](https://makefiletutorial.com)
+- [Makefile Tutorial By Example](https://makefiletutorial.com/)
 - [GNU Make Manual](https://www.gnu.org/software/make/manual/html_node/index.html)
