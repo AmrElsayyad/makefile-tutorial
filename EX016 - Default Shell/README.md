@@ -1,4 +1,4 @@
-The default shell is /bin/sh. You can change this by changing the variable SHELL:
+The default shell is `/bin/sh`. You can change this by changing the variable `SHELL`:
 
 ```make
 SHELL = bash.exe
