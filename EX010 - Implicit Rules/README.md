@@ -1,4 +1,4 @@
-Make loves c compilation. And every time it expresses its love, things get confusing. Perhaps the most confusing part of Make is the magic/automatic rules that are made. Make calls these "implicit" rules. I don't personally agree with this design decision, and I don't recommend using them, but they're often used and are thus useful to know.
+Make loves c compilation. And every time it expresses its love, things get confusing. Perhaps the most confusing part of `make` is the magic/automatic rules that are made. `make` calls these "implicit" rules. I don't personally agree with this design decision, and I don't recommend using them, but they're often used and are thus useful to know.
 
 Here's a list of implicit rules:
 - Compiling a C program: n.o is made automatically from n.c with a command of the form:
@@ -21,11 +21,11 @@ The important variables used by implicit rules are:
 - `CPPFLAGS`: Extra flags to give to the C preprocessor
 - `LDFLAGS`: Extra flags to give to compilers when they are supposed to invoke the linker
 
-Let's see how we can now build a C program without ever explicitly telling Make how to do the compililation:
+Let's see how we can now build a C program without ever explicitly telling `make` how to do the compililation:
 
 ```make
-CC = gcc # Flag for implicit rules
-CFLAGS = -g # Flag for implicit rules. Turn on debug info
+CC := gcc # Flag for implicit rules
+CFLAGS := -g # Flag for implicit rules. Turn on debug info
 
 # Implicit rule #1: blah is built via the C linker implicit rule
 # Implicit rule #2: blah.o is built via the C compilation implicit rule, because blah.c exists
