@@ -4,7 +4,7 @@ Note that `clean` is doing two new things here:
 
 - It's not the default target, and not a prerequisite, i.e., it'll never run unless you explicitly call `make clean`.
 - It's not intended to be a filename. If you happen to have a file named clean, this target won't run. 
-  > See [Phony Targets]([https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX025%20-%20.PHONY](https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX025%20-%20Phony%20Targets)) later in this tutorial on how to fix this.
+  > See [Phony Targets](https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX025%20-%20Phony%20Targets) later in this tutorial on how to fix this.
 
 ```make
 some_file: 
