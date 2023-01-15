@@ -113,6 +113,6 @@ clean:
 
 <p align="right">
 	<a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX025%20-%20Phony%20Targets" id="EX025">
-		Next: EX025 - Phony Targets
+		<img src="https://img.shields.io/badge/Next-EX025: Phony Targets-blue.svg">
 	</a>
 </p>
