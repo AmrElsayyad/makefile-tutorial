@@ -188,6 +188,6 @@ endif
 
 <p align="right">
 	<a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX024%20-%20VPATH_%20Search%20Path%20for%20All%20Prerequisites" id="EX024">
-		Next: EX024 - VPATH_ Search Path for All Prerequisites
+		<img src="https://img.shields.io/badge/Next-EX024: VPATH_ Search Path for All Prerequisites-blue.svg">
 	</a>
 </p>
