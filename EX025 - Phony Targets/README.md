@@ -36,6 +36,6 @@ _force target_ (see [Rules without Recipes or Prerequisites](https://www.gnu.org
 
 <p align="right">
 	<a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/Makefile%20Cookbook" id="cookbook">
-		Next: Makefile Cookbook
+		<img src="https://img.shields.io/badge/Next-Makefile Cookbook-blue.svg">
 	</a>
 </p>
