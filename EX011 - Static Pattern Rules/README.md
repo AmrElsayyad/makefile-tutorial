@@ -33,6 +33,6 @@ clean:
 
 <p align="right">
 	<a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX012%20-%20Pattern%20Rules" id="EX012">
-		Next: EX012 - Pattern Rules
+		<img src="https://img.shields.io/badge/Next-EX012: Pattern Rules-blue.svg">
 	</a>
 </p>
