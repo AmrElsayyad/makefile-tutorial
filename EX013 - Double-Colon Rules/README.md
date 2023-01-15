@@ -12,6 +12,6 @@ blah::
 
 <p align="right">
 	<a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX014%20-%20Command%20Silencing" id="EX014">
-		Next: EX014 - Command Silencing
+		<img src="https://img.shields.io/badge/Next-EX014: Command Silencing-blue.svg">
 	</a>
 </p>
