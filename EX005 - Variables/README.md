@@ -122,6 +122,6 @@ set_if_unset:
 
 <p align="right">
   <a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX006%20-%20Automatic%20Variables">
-  	Next: EX006 - Automatic Variables
+  	<img src="https://img.shields.io/badge/Next-EX006: Automatic Variables-blue.svg">
   </a>
 </p>
