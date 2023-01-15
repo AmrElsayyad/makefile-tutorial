@@ -17,6 +17,6 @@ all:
 
 <p align="right">
 	<a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX016%20-%20Default%20Shell" id="EX016">
-		Next: EX016 - Default Shell
+		<img src="https://img.shields.io/badge/Next-EX016: Default Shell-blue.svg">
 	</a>
 </p>
