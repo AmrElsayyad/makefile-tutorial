@@ -9,6 +9,6 @@ bash:
 
 <p align="right">
 	<a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX017%20-%20Double%20Dollar%20Sign" id="EX017">
-		Next: EX017 - Double Dollar Sign
+		<img src="https://img.shields.io/badge/Next-EX017: Double Dollar Sign-blue.svg">
 	</a>
 </p>
