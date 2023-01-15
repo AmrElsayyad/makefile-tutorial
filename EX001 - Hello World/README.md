@@ -16,6 +16,8 @@ Hello, World
 
 ```
 
-<p align="right">
-  <a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX002%20-%20Makefile%20Syntax">Next: EX002 - Makefile Syntax</a>
-</p>
+<div align="right">
+  <a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX002%20-%20Makefile%20Syntax">
+    <img src="https://img.shields.io/badge/Next-EX002:%20Makefile%20Syntax-blue.svg">
+  </a>
+</div>
