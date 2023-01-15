@@ -13,6 +13,6 @@ all:
 
 <p align="right">
 	<a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX018%20-%20Error%20Handling" id="EX018">
-		Next: EX018 - Error Handling
+		<img src="https://img.shields.io/badge/Next-EX018: Error Handling-blue.svg">
 	</a>
 </p>
