@@ -31,6 +31,6 @@ Here's another example:
 
 <p align="right">
 	<a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX013%20-%20Double-Colon%20Rules" id="EX013">
-		<img src="https://img.shields.io/badge/Next-EX013: Double-Colon Rules-blue.svg">
+		<img src="https://img.shields.io/badge/Next-EX013: Double Colon Rules-blue.svg">
 	</a>
 </p>
