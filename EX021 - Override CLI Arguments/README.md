@@ -18,6 +18,6 @@ all:
 
 <p align="right">
 	<a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX022%20-%20Functions" id="EX022">
-		Next: EX022 - Functions
+		<img src="https://img.shields.io/badge/Next-EX022: Functions-blue.svg">
 	</a>
 </p>
