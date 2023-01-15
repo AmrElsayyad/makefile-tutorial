@@ -64,6 +64,6 @@ four:
 
 <p align="right">
 	<a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX021%20-%20Override%20CLI%20Arguments" id="EX021">
-		Next: EX021 - Override CLI Arguments
+		<img src="https://img.shields.io/badge/Next-EX021: Override CLI Arguments-blue.svg">
 	</a>
 </p>
