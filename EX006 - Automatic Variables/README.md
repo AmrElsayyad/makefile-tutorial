@@ -28,6 +28,6 @@ clean:
 
 <p align="right">
 	<a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX007%20-%20Targets" id="EX007">
-		Next: EX007 - Targets
+  		<img src="https://img.shields.io/badge/Next-EX007: Targets-blue.svg">
 	</a>
 </p>
