@@ -45,6 +45,6 @@ Note that `*.o` did not expand and was taken literally.
 
 <p align="right">
 	<a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX009%20-%20The%20Percent%20Sign%20Wildcard" id="EX009">
-		Next: EX009 - The Percent Sign Wildcard
+		<img src="https://img.shields.io/badge/Next-EX009: The Percent Sign Wildcard-blue.svg">
 	</a>
 </p>
