@@ -21,6 +21,6 @@ two:
 
 <p align="right">
 	<a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX019%20-%20Recursion" id="EX019">
-		Next: EX019 - Recursion
+		<img src="https://img.shields.io/badge/Next-EX019: Recursion-blue.svg">
 	</a>
 </p>
