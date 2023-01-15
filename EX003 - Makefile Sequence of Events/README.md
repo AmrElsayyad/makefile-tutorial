@@ -24,8 +24,8 @@ blah.c:
 
 If you delete `blah.c`, all three targets will be rerun. If you edit it (and thus change the timestamp to newer than `blah.o`), the first two targets will run. If you run touch `blah.o` (and thus change the timestamp to newer than `blah.exe`), then only the first target will run. If you change nothing, none of the targets will run. Try it out!
 
-<p align="right">
+<div align="right">
   <a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX004%20-%20Make%20clean">
-  	Next: EX004 - Make clean
+  	<img src="https://img.shields.io/badge/Next-EX004: Make clean-blue.svg">
   </a>
-</p>
+</div>
