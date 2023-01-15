@@ -144,6 +144,6 @@ clean:
 
 <p align="right">
 	<a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX023%20-%20Conditional%20Statements" id="EX023">
-		Next: EX023 - Conditional Statements
+		<img src="https://img.shields.io/badge/Next-EX023: Conditional Statements-blue.svg">
 	</a>
 </p>
