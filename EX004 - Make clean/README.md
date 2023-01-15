@@ -16,6 +16,6 @@ clean:
 
 <p align="right">
   <a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX005%20-%20Variables">
-  	Next: EX005 - Variables
+  	<img src="https://img.shields.io/badge/Next-EX005: Variables-blue.svg">
   </a>
 </p>
