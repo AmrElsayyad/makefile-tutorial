@@ -1,4 +1,4 @@
-Make loves c compilation. And every time it expresses its love, things get confusing. Perhaps the most confusing part of `make` is the magic/automatic rules that are made. `make` calls these "implicit" rules. I don't personally agree with this design decision, and I don't recommend using them, but they're often used and are thus useful to know.
+Make loves C compilation. And every time it expresses its love, things get confusing. Perhaps the most confusing part of `make` is the magic/automatic rules that are made. `make` calls these "implicit" rules. I don't personally agree with this design decision, and I don't recommend using them, but they're often used and are thus useful to know.
 
 Here's a list of implicit rules:
 - Compiling a C program: n.o is made automatically from n.c with a command of the form:
@@ -14,8 +14,8 @@ Here's a list of implicit rules:
   `$(CC) $(LDFLAGS) $^ $(LOADLIBES) $(LDLIBS) -o $@`
 
 The important variables used by implicit rules are:
-- `CC`: Program for compiling C programs; default cc
-- `CXX`: Program for compiling C++ programs; default g++
+- `CC`: Program for compiling C programs; default `cc`
+- `CXX`: Program for compiling C++ programs; default `g++`
 - `CFLAGS`: Extra flags to give to the C compiler
 - `CXXFLAGS`: Extra flags to give to the C++ compiler
 - `CPPFLAGS`: Extra flags to give to the C preprocessor
@@ -40,6 +40,6 @@ clean:
 
 <p align="right">
 	<a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX011%20-%20Static%20Pattern%20Rules" id="EX011">
-		Next: EX011 - Static Pattern Rules
+		<img src="https://img.shields.io/badge/Next-EX011: Static Pattern Rules-blue.svg">
 	</a>
 </p>
