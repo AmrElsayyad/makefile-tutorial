@@ -8,6 +8,6 @@ all:
 
 <p align="right">
 	<a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX015%20-%20Command%20Execution" id="EX015">
-		Next: EX015 - Command Execution
+		<img src="https://img.shields.io/badge/Next-EX015: Command Execution-blue.svg">
 	</a>
 </p>
