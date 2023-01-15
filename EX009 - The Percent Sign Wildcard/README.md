@@ -25,6 +25,6 @@ clean:
 
 <p align="right">
 	<a href="https://github.com/AmrElsayyad/makefile-tutorial/tree/main/EX010%20-%20Implicit%20Rules" id="EX010">
-		Next: EX010 - Implicit Rules
+		<img src="https://img.shields.io/badge/Next-EX010: Implicit Rules-blue.svg">
 	</a>
 </p>
