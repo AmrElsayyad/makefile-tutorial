@@ -1,6 +1,6 @@
 # Makefile Tutorial
 
-This tutorial provides a step-by-step guide that covers the basics of _makefiles_. I built the tutorial on top of the [Makefile Tutorial By Example](https://makefiletutorial.com/) created by [Chase Lambert](https://github.com/theicfire), with additional information from the [GNU Make Manual](https://www.gnu.org/software/make/manual/html_node/index.html) to add some clarifications. The examples are available in separate folders. Each folder has a _makefile_ containing code discussed in a README file. In the end, you'll see how various topics work together in an example project (see [Makefile Cookbook](https://github.com/AmrElsayyad/makefile-tutorial/tree/main/Makefile%20Cookbook)).
+This tutorial provides a step-by-step guide that covers the basics of _makefiles_. It was built on top of the [Makefile Tutorial By Example](https://makefiletutorial.com/), created by [Chase Lambert](https://github.com/theicfire), and the [GNU Make Manual](https://www.gnu.org/software/make/manual/html_node/index.html). The examples are available in separate folders. Each folder has a _makefile_ containing code discussed in a README file. In the end, you'll see how various topics work together in an example project (see [Makefile Cookbook](https://github.com/AmrElsayyad/makefile-tutorial/tree/main/Makefile%20Cookbook)).
 
 ## Prerequisites
 
